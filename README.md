@@ -1,33 +1,47 @@
 # SQL Traceability
 
-This tool generates a traceability report from a SQL script.
+This tool generates a traceability report from a SQL script. It provides a web interface to enter a SQL script and view the traceability report.
 
-## Installation
+**Live Demo:** [https://mjmc4498.github.io/TrabilidadSQL](https://mjmc4498.github.io/TrabilidadSQL)
 
-1. Clone the repository.
-2. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Author:** [mjmc4498](https://github.com/mjmc4498)
 
-## Usage
+## System Manual
 
-To generate a traceability report, run the following command:
+### Installation
 
-```bash
-python -m sql_traceability.cli <path_to_sql_file> <path_to_output_csv>
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mjmc4498/TrabilidadSQL.git
+    cd TrabilidadSQL
+    ```
 
-For example:
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```bash
-python -m sql_traceability.cli my_script.sql traceability_report.csv
-```
+### Running the Application
 
-This will create a CSV file with the following columns:
+1.  **Start the Flask server:**
+    ```bash
+    python app.py
+    ```
 
-- `tabla_fuente`
-- `campo_fuente`
-- `tabla_destino`
-- `campo_destino`
-- `logica`
+2.  Open your web browser and navigate to `http://127.0.0.1:5000`.
+
+## User Manual
+
+1.  Enter your SQL script in the text area.
+2.  Click the "Generate Traceability" button.
+3.  The traceability report will be displayed in a table below the text area.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
