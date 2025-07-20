@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQL Traceability</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Trazabilidad de SQL</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>SQL Traceability</h1>
+        <h1>Trazabilidad de SQL</h1>
         <form id="trace-form">
-            <textarea id="sql-script" name="sql_script" rows="10" cols="50" placeholder="Enter your SQL script here..."></textarea>
-            <button type="submit">Generate Traceability</button>
+            <textarea id="sql-script" name="sql_script" rows="10" cols="50" placeholder="Introduce tu script SQL aquí..."></textarea>
+            <button type="submit">Generar Trazabilidad</button>
         </form>
         <div id="trace-result"></div>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="./static/js/script.js"></script>
 </body>
 </html>

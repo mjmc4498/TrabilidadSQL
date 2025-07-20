@@ -1,47 +1,47 @@
-# SQL Traceability
+# Trazabilidad de SQL
 
-This tool generates a traceability report from a SQL script. It provides a web interface to enter a SQL script and view the traceability report.
+Esta herramienta genera un informe de trazabilidad a partir de un script SQL. Proporciona una interfaz web para introducir un script SQL y ver el informe de trazabilidad.
 
-**Live Demo:** [https://mjmc4498.github.io/TrabilidadSQL](https://mjmc4498.github.io/TrabilidadSQL)
+**Demo en vivo:** [https://mjmc4498.github.io/TrabilidadSQL](https://mjmc4498.github.io/TrabilidadSQL)
 
-**Author:** [mjmc4498](https://github.com/mjmc4498)
+**Autor:** [mjmc4498](https://github.com/mjmc4498)
 
-## System Manual
+## Manual del Sistema
 
-### Installation
+### Instalación
 
-1.  **Clone the repository:**
+1.  **Clona el repositorio:**
     ```bash
     git clone https://github.com/mjmc4498/TrabilidadSQL.git
     cd TrabilidadSQL
     ```
 
-2.  **Install dependencies:**
+2.  **Instala las dependencias:**
     ```bash
     pip install -r requirements.txt
     ```
 
-### Running the Application
+### Ejecución de la Aplicación
 
-1.  **Start the Flask server:**
+1.  **Inicia el servidor Flask:**
     ```bash
     python app.py
     ```
 
-2.  Open your web browser and navigate to `http://127.0.0.1:5000`.
+2.  Abre tu navegador web y navega a `http://127.0.0.1:5000`.
 
-## User Manual
+## Manual de Usuario
 
-1.  Enter your SQL script in the text area.
-2.  Click the "Generate Traceability" button.
-3.  The traceability report will be displayed in a table below the text area.
+1.  Introduce tu script SQL en el área de texto.
+2.  Haz clic en el botón "Generar Trazabilidad".
+3.  El informe de trazabilidad se mostrará en una tabla debajo del área de texto.
 
-## Contributing
+## Contribuciones
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Las pull requests son bienvenidas. Para cambios importantes, por favor abre un issue primero para discutir lo que te gustaría cambiar.
 
-Please make sure to update tests as appropriate.
+Por favor, asegúrate de actualizar las pruebas según corresponda.
 
-## License
+## Licencia
 
 [MIT](https://choosealicense.com/licenses/mit/)

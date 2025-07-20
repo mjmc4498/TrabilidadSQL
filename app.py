@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, jsonify
+from flask_frozen import Freezer
 from sql_traceability.logic.parser import parse_sql
 
 app = Flask(__name__)
+freezer = Freezer(app)
 
 @app.route('/')
 def index():
@@ -14,4 +16,4 @@ def trace():
     return jsonify(traceability_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    freezer.freeze()

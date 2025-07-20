@@ -13,7 +13,7 @@ document.getElementById('trace-form').addEventListener('submit', function(event)
     })
     .then(response => response.json())
     .then(data => {
-        let table = '<table><tr><th>Source Table</th><th>Source Field</th><th>Destination Table</th><th>Destination Field</th><th>Logic</th></tr>';
+        let table = '<table><tr><th>Tabla Fuente</th><th>Campo Fuente</th><th>Tabla Destino</th><th>Campo Destino</th><th>Lógica</th></tr>';
         data.forEach(row => {
             table += `<tr><td>${row.tabla_fuente}</td><td>${row.campo_fuente}</td><td>${row.tabla_destino}</td><td>${row.campo_destino}</td><td>${row.logica}</td></tr>`;
         });
@@ -22,6 +22,6 @@ document.getElementById('trace-form').addEventListener('submit', function(event)
     })
     .catch(error => {
         console.error('Error:', error);
-        resultDiv.innerHTML = '<p>An error occurred. Please check the console for details.</p>';
+        resultDiv.innerHTML = '<p>Ocurrió un error. Por favor, comprueba la consola para más detalles.</p>';
     });
 });
